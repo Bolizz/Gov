@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import { createPinia } from "pinia";
-
+import router from "./router";
 import PrimeVue from "primevue/config";
 import App from "./App.vue";
 
@@ -19,5 +19,6 @@ app.component("InputText", InputText);
 app.use(createPinia());
 
 app.use(PrimeVue);
+app.use(router);
 app.component("InputText", InputText);
 app.mount("#app");

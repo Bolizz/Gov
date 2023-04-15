@@ -8,8 +8,6 @@
         <a class="signup" href="#">signup</a>
       </div>
     </div>
-    <div class="mainbody">mainbody</div>
-    <div class="footer">footer</div>
   </div>
 </template>
 
