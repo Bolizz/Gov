@@ -3,13 +3,12 @@
     <div class="form">
       <h3>Введите ИИН чтобы получить документ</h3>
       <input type="number" v-model="value" class="get-data" placeholder="ИИН">
-      <Button label="Submit" outlined />
+      <button class="button">Submit</button>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import Button from 'primevue/button';
 import { ref } from 'vue';
 
 const value = ref(Number);
@@ -55,5 +54,22 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+.button{
+  background-color: var(--color-main);
+  border-radius: 6px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: .2s;
+}
+.button:focus{
+  opacity: 0.5;
 }
 </style>
