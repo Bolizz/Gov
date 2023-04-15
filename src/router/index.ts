@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import DocumentComfirmationVue from "@/views/DocumentComfirmation.vue";
 import headerOfMainPageVue from "@/views/headerOfMainPage.vue";
+import getIIN from "@/components/getIIN.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -13,6 +14,11 @@ const router = createRouter({
       path: "/home",
       name: "header",
       component: headerOfMainPageVue,
+    },
+    {
+      path: "/getIIN",
+      name: "data",
+      component: getIIN,
     },
   ],
 });
