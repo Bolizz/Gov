@@ -14,7 +14,7 @@
 <script setup lang="ts">
 import InputText from "primevue/inputtext";
 import { ref } from "vue";
-const data = ref({});
+const name = ref();
 </script>
 
 <style scoped>
@@ -23,16 +23,13 @@ const data = ref({});
   padding: 0;
   background-color: aliceblue;
 }
-.container {
-  display: grid;
-  grid-template-rows: (3, 1fr);
-}
+
 .header {
   display: flex;
   justify-content: space-between;
-  border: 1px solid;
+  border: aliceblue 1px solid;
   align-items: center;
-  padding: 10px;
+  padding: 0px 50px 0px 50px;
 }
 .auth {
   display: flex;
@@ -44,6 +41,8 @@ const data = ref({});
   border-radius: 30px;
 }
 a {
+  color: green;
+  text-decoration: none;
 }
 a:active {
   color: none;
