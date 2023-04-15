@@ -1,53 +1,61 @@
-<template>
-  <div class="container">
-    <div class="header">
-      <img src="#" />
-      <InputText class="search" placeholder="Search" />
-      <div class="auth">
-        <a class="login" href="#">login</a>
-        <a class="signup" href="#">signup</a>
-      </div>
-    </div>
-    <div class="mainbody">mainbody</div>
-    <div class="footer">footer</div>
-  </div>
-</template>
-
 <script setup lang="ts">
-import InputText from "primevue/inputtext";
-import { defineComponent, ref } from "vue";
-const data = ref({});
+import { RouterLink, RouterView } from "vue-router";
 </script>
 
+<template>
+  <h1>welcome to prime</h1>
+  <RouterView />
+</template>
+
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-  background-color: aliceblue;
+header {
+  line-height: 1.5;
+  max-height: 100vh;
 }
-.container {
-  display: grid;
-  grid-template-rows: (3, 1fr);
+.logo {
+  display: block;
+  margin: 0 auto 2rem;
 }
-.header {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid;
-  align-items: center;
-  padding: 10px;
+nav {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 2rem;
 }
-.auth {
-  display: flex;
-  justify-items: space-between;
-  gap: 20px;
+nav a.router-link-exact-active {
+  color: var(--color-text);
 }
-.search {
-  height: 50%;
-  border-radius: 30px;
+nav a.router-link-exact-active:hover {
+  background-color: transparent;
 }
-a {
+nav a {
+  display: inline-block;
+  padding: 0 1rem;
+  border-left: 1px solid var(--color-border);
 }
-a:active {
-  color: none;
+nav a:first-of-type {
+  border: 0;
+}
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    place-items: center;
+    padding-right: calc(var(--section-gap) / 2);
+  }
+  .logo {
+    margin: 0 2rem 0 0;
+  }
+  header .wrapper {
+    display: flex;
+    place-items: flex-start;
+    flex-wrap: wrap;
+  }
+  nav {
+    text-align: left;
+    margin-left: -1rem;
+    font-size: 1rem;
+    padding: 1rem 0;
+    margin-top: 1rem;
+  }
 }
 </style>
