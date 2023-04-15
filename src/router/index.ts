@@ -16,6 +16,11 @@ const router = createRouter({
       name: "dlogin",
       component: DeliveryLogin,
     },
+    {
+      path: "/document-request/:userData/address-fillup/",
+      name: "address",
+      component: DocumentComfirmationVue,
+    },
   ],
 });
 

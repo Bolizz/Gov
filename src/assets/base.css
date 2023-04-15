@@ -42,10 +42,16 @@
 
 body {
   font-family: (--font-family);
+  background-color: var(--color-surface);
 }
 
 hr {
   margin-bottom: 1.5rem;
+}
+
+label {
+  background-color: var(--color-border);
+  margin-bottom: 0.5rem;
 }
 
 .subhead-topic {
@@ -55,10 +61,31 @@ hr {
   font-size: 30px;
   line-height: 36px;
 
+  background-color: var(--color-border);
   margin-bottom: 1rem;
 }
 
 .input-field {
   background-color: var(--active);
   border-radius: 31px;
+}
+
+.input-number-field {
+  background-color: var(--active);
+  border-radius: 15px;
+  max-width: 100px;
+}
+
+.user-info {
+  padding: 1rem;
+  border-radius: 25px;
+  background-color: var(--color-border);
+}
+
+.two-input {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  background-color: var(--color-border);
+  margin-bottom: 1.5rem;
 }
