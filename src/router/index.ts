@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import DocumentComfirmationVue from "@/views/DocumentComfirmation.vue";
 import headerOfMainPageVue from "@/views/headerOfMainPage.vue";
-import getIIN from "@/components/getIIN.vue";
+import getIIN from "@/views/getIIN.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [

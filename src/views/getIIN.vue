@@ -13,7 +13,12 @@ import { ref } from 'vue';
 const value = ref(Number);
 </script>
 
-<style>
+<style scoped>
+* {
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+} 
 .app{
     width: 100%;
     display: flex;
