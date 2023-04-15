@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <p>Заполните данные для потверждения заказа</p>
+  <div class="container__doc-comfirm">
+    <p class="header__doc-comfirm">Заполните данные для потверждения заказа</p>
     <section class="main">
       <div class="column-one">
         <UserInfo />
@@ -119,6 +119,13 @@ const additionalInfo = ref("");
 </script>
 
 <style scoped>
+.container__doc-comfirm {
+  padding: 5rem;
+}
+
+.header__doc-comfirm {
+  font-size: 36px;
+}
 .main {
   display: flex;
   flex-direction: row;
