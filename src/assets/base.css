@@ -37,19 +37,21 @@ body {
   font-family: (--font-family);
 }
 
+hr {
+  margin-bottom: 1.5rem;
+}
+
 .subhead-topic {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
 
-  border-bottom: 1px solid #000000;
-
-  padding-bottom: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .input-field {
   background-color: var(--active);
+  border-radius: 31px;
 }
