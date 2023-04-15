@@ -22,6 +22,7 @@ const router = createRouter({
       name: "address",
       component: DocumentComfirmationVue,
     },
+    {
       path: "/getIIN",
       name: "data",
       component: getIIN,
