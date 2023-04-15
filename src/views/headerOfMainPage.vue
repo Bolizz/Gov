@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
 import InputText from "primevue/inputtext";
-import { defineComponent, ref } from "vue";
+import { ref } from "vue";
 const data = ref({});
 </script>
 

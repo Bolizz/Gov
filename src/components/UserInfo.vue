@@ -1,8 +1,9 @@
 <template>
   <div class="user-info">
     <p class="subhead-topic">Информация о пользователе</p>
+    <hr />
     <div>
-      <InputText disabled v-bind:placeholder="nameOfUser" class="input-field" />
+      <InputText disabled v-model="nameOfUser" class="input-field" />
     </div>
   </div>
 </template>
@@ -15,5 +16,7 @@ const nameOfUser = ref("Almaz");
 <style scoped>
 .user-info {
   padding: 1rem;
+  border-radius: 25px;
+  background-color: var(--secondary-background);
 }
 </style>
