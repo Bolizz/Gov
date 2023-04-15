@@ -5,6 +5,8 @@ import PrimeVue from "primevue/config";
 import App from "./App.vue";
 import Button from "primevue/button";
 import Password from "primevue/password";
+import InputMask from "primevue/inputmask";
+import Textarea from "primevue/textarea";
 
 import "primevue/resources/themes/lara-light-indigo/theme.css";
 import "primevue/resources/primevue.min.css";
@@ -19,6 +21,8 @@ const app = createApp(App);
 app.component("InputText", InputText);
 app.component("Button", Button);
 app.component("Password", Password);
+app.component("InputMask", InputMask);
+app.component("Textarea", Textarea);
 app.use(createPinia());
 
 app.use(PrimeVue);

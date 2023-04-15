@@ -18,6 +18,10 @@ const router = createRouter({
       component: DeliveryLogin,
     },
     {
+      path: "/document-request/:userData/address-fillup/",
+      name: "address",
+      component: DocumentComfirmationVue,
+    },
       path: "/getIIN",
       name: "data",
       component: getIIN,

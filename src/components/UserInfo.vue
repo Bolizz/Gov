@@ -2,9 +2,9 @@
   <div class="user-info">
     <p class="subhead-topic">Информация о пользователе</p>
     <hr />
-    <div>
+    <div style="background-color: var(--color-border)">
       <InputText disabled v-model="iin" class="input-field iin" />
-      <div class="user-name">
+      <div class="two-input">
         <InputText disabled v-model="nameOfUser" class="input-field name" />
         <InputText disabled v-model="surnameOfUser" class="input-field name" />
       </div>
@@ -21,12 +21,6 @@ const surnameOfUser = ref("Amanzholuly");
 </script>
 
 <style scoped>
-.user-info {
-  padding: 1rem;
-  border-radius: 25px;
-  background-color: var(--secondary-background);
-}
-
 .iin {
   width: 100%;
   margin-bottom: 1.5rem;
@@ -35,11 +29,5 @@ const surnameOfUser = ref("Amanzholuly");
 .name {
   width: 100%;
   margin-bottom: 1rem;
-}
-
-.user-name {
-  display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
 }
 </style>
