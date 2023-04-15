@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import DocumentComfirmationVue from "@/views/DocumentComfirmation.vue";
 // import headerOfMainPageVue from "@/views/headerOfMainPage.vue";
 import DeliveryLogin from "@/views/DeliveryLogin.vue";
+import getIIN from "@/views/getIIN.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,6 +21,10 @@ const router = createRouter({
       path: "/document-request/:userData/address-fillup/",
       name: "address",
       component: DocumentComfirmationVue,
+    },
+      path: "/getIIN",
+      name: "data",
+      component: getIIN,
     },
   ],
 });
