@@ -3,15 +3,21 @@
     <div class="form">
       <h3>Введите ИИН чтобы получить документ</h3>
       <input type="number" v-model="value" class="get-data" placeholder="ИИН">
-      <button class="button">Submit</button>
+      <button class="button" @click="submitForm">Submit</button>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import { useRouter } from "vue-router";
 
+const router = useRouter();
 const value = ref(Number);
+
+const submitForm = () => {
+  router.push(`/home`);
+}
 </script>
 
 <style scoped>

@@ -3,6 +3,7 @@ import DocumentComfirmationVue from "@/views/DocumentComfirmation.vue";
 // import headerOfMainPageVue from "@/views/headerOfMainPage.vue";
 import DeliveryLogin from "@/views/DeliveryLogin.vue";
 import getIIN from "@/views/getIIN.vue";
+import Home from "@/views/Home.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +28,12 @@ const router = createRouter({
       name: "data",
       component: getIIN,
     },
+    {
+      path: "/home",
+      name: "home",
+      component: Home,
+    },
+
   ],
 });
 
