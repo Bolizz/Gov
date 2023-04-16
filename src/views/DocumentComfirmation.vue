@@ -93,7 +93,28 @@
           </div>
         </div>
       </div>
-      <div class="column-two"></div>
+      <div class="column-two">
+        <div class="user-info">
+          <p class="subhead-topic">Способ доставки</p>
+          <hr />
+          <div class="two-input">
+            <div class="contract">
+              <label for="contract">Номер карты</label>
+              <InputText
+                disabled
+                v-model="contractNumber"
+                class="input-field"
+              />
+            </div>
+          </div>
+          <div class="two-input">
+            <div class="contract">
+              <label for="service">Сервис</label>
+              <InputText disabled v-model="serviceName" class="input-field" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -126,6 +147,7 @@ const additionalInfo = ref("");
 
 .header__doc-comfirm {
   font-size: 36px;
+  align-items: center;
 }
 .main {
   display: flex;
@@ -145,7 +167,8 @@ const additionalInfo = ref("");
 }
 
 .column-two {
-  width: 470px;
+  width: 100%;
+  max-width: 470px;
 }
 
 .phone-input {

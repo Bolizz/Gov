@@ -13,7 +13,7 @@
 
   --color-main: #4c4ddc;
   --color-surface: #f5f5ff;
-  --color-border: #cfcfcf;
+  --color-border: #5154bb;
   --color-hover: #3334cc;
   --color-pressed: #21217a;
   --color-focus: rgba(76, 77, 220, 20%);
@@ -33,18 +33,23 @@
   }
 } */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  position: relative;
-  font-weight: normal;
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
 }
 
-body {
-  font-family: (--font-family);
-  /* background-color: var(--color-surface); */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 hr {
@@ -68,12 +73,10 @@ label {
 }
 
 .input-field {
-  background-color: var(--active);
   border-radius: 31px;
 }
 
 .input-number-field {
-  background-color: var(--active);
   border-radius: 15px;
   max-width: 100px;
 }
