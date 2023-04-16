@@ -121,6 +121,7 @@ const additionalInfo = ref("");
 <style scoped>
 .container__doc-comfirm {
   padding: 5rem;
+  /* background-color: gray; */
 }
 
 .header__doc-comfirm {

@@ -8,17 +8,17 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: "/document-request/:userData",
-      name: "home",
-      component: DocumentComfirmationVue,
-    },
-    {
       path: "/deliveryLogin",
       name: "dlogin",
       component: DeliveryLogin,
     },
     {
-      path: "/document-request/:userData/address-fillup/",
+      path: "/document/:iin",
+      name: "document-view",
+      component: DocumentComfirmationVue,
+    },
+    {
+      path: "/address-fillup",
       name: "address",
       component: DocumentComfirmationVue,
     },
