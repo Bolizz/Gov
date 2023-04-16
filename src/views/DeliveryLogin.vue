@@ -2,6 +2,7 @@
 import InputText from "primevue/inputtext";
 import Button from "primevue/button";
 import { ref, computed } from "vue";
+import TopBarNavigation from "@/components/TopBarNavigation.vue";
 
 const iin = ref("");
 const password = ref("");
@@ -18,6 +19,7 @@ const submit = () => {};
 </script>
 
 <template>
+  <TopBarNavigation />
   <div class="container">
     <h1 class="bas">Login</h1>
     <div class="inputpart">

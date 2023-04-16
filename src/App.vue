@@ -1,10 +1,9 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-import header from "./views/headerOfMainPage.vue";
+import TopBarNavigation from "./components/TopBarNavigation.vue";
 </script>
 
 <template>
-  <header />
   <RouterView />
 </template>
 

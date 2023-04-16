@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container__top-bar">
     <div class="header">
       <img src="#" />
       <InputText class="search" placeholder="Search" />
@@ -18,10 +18,9 @@ const name = ref();
 </script>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-  background-color: aliceblue;
+.container__top-bar {
+  width: 100%;
+  background-color: var(--top-bar);
 }
 
 .header {

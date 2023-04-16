@@ -17,6 +17,8 @@
   --color-hover: #3334cc;
   --color-pressed: #21217a;
   --color-focus: rgba(76, 77, 220, 20%);
+
+  --top-bar: #3b23d9;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -42,7 +44,7 @@
 
 body {
   font-family: (--font-family);
-  background-color: var(--color-surface);
+  /* background-color: var(--color-surface); */
 }
 
 hr {
